@@ -18,8 +18,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
-    "typeRoots": ["./node_modules/@types", "../ui-library/node_modules/@types"]
+    "typeRoots": ["./node_modules/@types", "../ui-library/node_modules/@types"],
+    "types": ["jest", "node"]
   },
   "include": ["src"],
-  "exclude": ["dist", "node_modules", "**/*.test.ts", "**/*.test.tsx"]
+  "exclude": ["dist", "node_modules"]
 }
