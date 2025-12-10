@@ -1,0 +1,121 @@
+.service-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.breadcrumbs {
+  margin-bottom: 2rem;
+  color: #b8a690;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: #f4e4bc;
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  color: #f4e4bc;
+}
+
+.service-details h1 {
+  margin-bottom: 1.5rem;
+  color: #f4e4bc;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #b8a690;
+  margin-bottom: 2rem;
+}
+
+.features {
+  background: linear-gradient(135deg, #2b1a0a 0%, #1a1a1a 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #8b4513;
+}
+
+.features h3 {
+  margin-bottom: 1rem;
+  color: #d4af37;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #b8a690;
+}
+
+.features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.price-section {
+  background: linear-gradient(135deg, #2b1a0a 0%, #1a1a1a 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  border: 1px solid #8b4513;
+}
+
+.price-section h3 {
+  margin-bottom: 1rem;
+  color: #f4e4bc;
+}
+
+.price-section .price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d4af37;
+  margin: 1rem 0;
+}
+
+.order-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #5d4037 0%, #8d6e63 40%, #d4af37 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.order-button:hover {
+  background: linear-gradient(135deg, #6d5047 0%, #9d7e73 40%, #e4bf47 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.calculator-section {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 2px solid #8b4513;
+}
+
+@media (max-width: 768px) {
+  .service-details {
+    padding: 1rem;
+  }
+}
