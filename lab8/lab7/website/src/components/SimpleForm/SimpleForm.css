@@ -1,0 +1,13 @@
+.simple-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.simple-form button {
+  margin-top: 0.5rem;
+}
+
+

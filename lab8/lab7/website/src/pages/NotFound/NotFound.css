@@ -1,0 +1,47 @@
+.not-found {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 6rem;
+  margin: 0;
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #f4e4bc;
+}
+
+.not-found p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #b8a690;
+  line-height: 1.6;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #5d4037 0%, #8d6e63 40%, #d4af37 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.home-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+  background: linear-gradient(135deg, #6d5047 0%, #9d7e73 40%, #e4bf47 100%);
+}
+
