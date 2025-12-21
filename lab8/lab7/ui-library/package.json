@@ -18,17 +18,13 @@
     }
   },
   "scripts": {
-    "predev": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "prebuild": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "prelint": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "pretest": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "dev": "vite build --watch",
-    "build": "tsc && vite build",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "dev": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && vite build --watch'",
+    "build": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && tsc && vite build'",
+    "lint": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && eslint .'",
+    "lint:fix": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && eslint . --fix'",
+    "test": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest'",
+    "test:watch": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest --watch'",
+    "test:coverage": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest --coverage'"
   },
   "peerDependencies": {
     "react": "^19.2.0",

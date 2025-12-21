@@ -4,19 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "prebuild": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "prelint": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "pretest": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "prepreview": "bash -c 'source ~/.nvm/nvm.sh && nvm use 22'",
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "preview": "vite preview"
+    "dev": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && vite'",
+    "build": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && tsc -b && vite build'",
+    "lint": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && eslint .'",
+    "lint:fix": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && eslint . --fix'",
+    "test": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest'",
+    "test:watch": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest --watch'",
+    "test:coverage": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest --coverage'",
+    "preview": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && vite preview'"
   },
   "dependencies": {
     "@my-app/ui-library": "file:../ui-library",
