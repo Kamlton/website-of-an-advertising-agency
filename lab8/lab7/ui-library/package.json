@@ -18,13 +18,13 @@
     }
   },
   "scripts": {
-    "dev": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && vite build --watch'",
-    "build": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && tsc && vite build'",
-    "lint": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && eslint .'",
-    "lint:fix": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && eslint . --fix'",
-    "test": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest'",
-    "test:watch": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest --watch'",
-    "test:coverage": "bash -c 'unset npm_config_prefix && source ~/.nvm/nvm.sh && nvm use 22 && jest --coverage'"
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "peerDependencies": {
     "react": "^19.2.0",
@@ -35,7 +35,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "@types/jest": "^30.0.0",
+    "@types/jest": "28.1.8",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@types/react-router-dom": "^5.3.3",
@@ -46,9 +46,9 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^30.2.0",
-    "jest-environment-jsdom": "^30.2.0",
-    "ts-jest": "^29.4.5",
+    "jest": "30.2.0",
+    "jest-environment-jsdom": "30.2.0",
+    "ts-jest": "29.4.5",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.45.0",
     "vite": "^7.1.7",
