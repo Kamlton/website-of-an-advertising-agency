@@ -1,0 +1,70 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #f4e4bc;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.required {
+  color: #d4af37;
+  margin-left: 0.25rem;
+}
+
+.input {
+  padding: 0.75rem;
+  border: 1px solid #8b4513;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #2b1a0a 0%, #1a1a1a 100%);
+  color: #f4e4bc;
+}
+
+.input::placeholder {
+  color: #8b4513;
+  opacity: 0.7;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+  background: linear-gradient(135deg, #3b2a1a 0%, #2a1a1a 100%);
+}
+
+.input:disabled {
+  background-color: #1a1a1a;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input.error {
+  border-color: #dc3545;
+}
+
+.input.error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
